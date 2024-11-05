@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import TaskInput from './components/TaskInput';

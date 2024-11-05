@@ -1,4 +1,4 @@
-// src/redux/reducers/authReducer.js
+
 import { LOGIN, LOGOUT } from '../actions/authActions';
 
 const initialState = {
