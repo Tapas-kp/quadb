@@ -8,10 +8,13 @@ import { login, logout } from './redux/actions/authActions';
 const App = () => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const dispatch = useDispatch();
+  const obj={
+    backgroundColor:isAuthenticated?"red":"green"
+  }
 
   return (
     <div className="App">
-      <button onClick={() => dispatch(isAuthenticated ? logout() : login())}>
+      <button onClick={() => dispatch(isAuthenticated ? logout() : login())} style={obj}>
         {isAuthenticated ? 'Logout' : 'Login'}
       </button>
       {isAuthenticated ? (

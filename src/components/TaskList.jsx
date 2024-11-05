@@ -12,7 +12,7 @@ const TaskList = () => {
       {tasks.map((task) => (
         <div key={task.id}>
           <span>{task.name}</span>
-          <button onClick={() => dispatch(deleteTask(task.id))}>Delete</button>
+          <button onClick={() => dispatch(deleteTask(task.id))} id='dlt'>Delete</button>
         </div>
       ))}
     </div>

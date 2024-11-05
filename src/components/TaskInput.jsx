@@ -1,4 +1,4 @@
-// src/components/TaskInput.jsx
+
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTask } from '../redux/actions/taskActions';
@@ -13,16 +13,20 @@ const TaskInput = () => {
       setTask('');
     }
   };
+  let obj={
+    backgroundColor:task?"green":"blue"
+  }
 
   return (
-    <div>
+ 
+    <div id='dj'>
       <input
         type="text"
         value={task}
         onChange={(e) => setTask(e.target.value)}
         placeholder="Add a new task"
       />
-      <button onClick={handleAddTask}>Add Task</button>
+      <button onClick={handleAddTask} style={obj}>Add Task</button>
     </div>
   );
 };
